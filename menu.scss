@@ -1,0 +1,105 @@
+h1, h3, .gras {
+    font-weight: bold;
+}
+h1, .coeur {
+    font-size: 30px;
+}
+h2 {
+    font-weight: unset;
+    border-bottom: 3px rgb(153, 226, 208) solid;
+    width: 40px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    .logo {
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+    .image_menu {
+        width: 540px;
+        height: 300px;
+    }
+}
+section {
+    padding: 20px;
+    width: 500px;
+    position: relative;
+    border: 1px white solid;
+    border-radius: 50px;
+    margin-top: -50px;
+    background: rgb(243, 243, 243);
+    .titre {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px 20px 30px;
+    }
+    .bloc {
+        border: 1px white solid;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+        width: 430px;
+        height: 70px;
+        line-height: 0px;
+        padding: 10px 20px 10px 10px;
+        margin: 10px 0 20px 20px;
+        .icone {
+            text-align: center;
+            display: none;
+            border: 1px rgb(153, 226, 208) solid;
+            background-color: rgb(153, 226, 208);
+            color: white;
+            border-radius: 0 20px 20px 0;
+            width: 70px;
+            height: 90px;
+            margin: -47px -21px 0 0;
+            .check {
+                padding:25px 0 0 0;
+            }
+        }
+        h3 {
+            font-size: 18px;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+    }
+    .bloc:hover .icone {
+        display: block;
+    }
+    button {
+        margin: 30px 0 100px 150px;
+        border: 1px white solid;
+        border-radius: 50px;
+        background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+        color: white;
+        width: 180px;
+        height: 50px;
+    }
+}
+.bloc_footer {
+    position: relative;
+    margin: -40px 0 0 0;
+    font-size: 20px;
+    color: white;
+    background: rgb(48, 48, 48);
+    padding: 30px;
+    .footer_logo {
+        color: white;
+        font-family: "Shrikhand", "cursive";
+    }
+    .text{
+        display: flex;
+        .icone {
+            width: 10px;
+            margin: -10px 20px 0px 0;
+        }
+    }
+}
