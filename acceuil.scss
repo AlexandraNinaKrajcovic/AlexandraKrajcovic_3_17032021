@@ -1,9 +1,10 @@
 .page {
     font-size: 30px;
     header {
+        width: 100%;
         text-align: center;
         .logo {
-            margin: 50px 0 30px 0;
+            text-align: center;
         }
         .ville_header {
             display: flex;
@@ -61,13 +62,19 @@
                     text-align: center;
                 }
                 .transformation1 {
-                    transform: translateX(-140px);
-                }
-                .transformation2 {
                     transform: translateX(-150px);
                 }
+                .transformation2 {
+                    transform: translateX(-160px);
+                }
                 .transformation3 {
-                    transform: translateX(-155px);
+                    transform: translateX(-165px);
+                }
+                .icone {
+                    padding: 10px 0 10px 10px;
+                }
+                .text {
+                    padding: 8px;
                 }
             .icone {
                 margin-left: 60px;
@@ -130,12 +137,29 @@
                 flex-direction: row;
                 justify-content: space-between;
                 padding: 0 50px 0 30px;
-                .coeur {
+                .bloc_coeur {
+                    margin-top: -20px;
+                    height: 30px;
+                  .coeur {
+                    position: absolute;
                     font-size: 30px;
-                    margin-top: -100px;
                 }
-                
+                .coeur2 {
+                    font-size: 30px;
+                    color: white;
+                } 
+                }
             }
+        }
+        .menu_bloc:hover {
+            .bloc_coeur {
+               .coeur {
+                display: none;
+            }
+            .coeur2 {
+                color: rgb(147, 86, 220), ;
+            } 
+            } 
         }
     }
 
@@ -271,7 +295,6 @@
     .page {
         font-size: 20px;
         header {
-            width: 500px;
             .ville_header {
                 .icone_map {
                     margin-left: 160px;
@@ -297,23 +320,24 @@
                 .bloc {
                     border-radius: 20px;
                     width: 400px;
+                    height: 80px;
                     margin: 0 0 40px 20px;
                     .transformation1, .transformation2, .transformation3 {
                         width: 30px;
                         height: 30px;
                     }
                     .transformation1 {
-                        transform: translateX(-110px);
+                        transform: translateX(-100px);
                     }
                     .transformation2 {
-                        transform: translateX(-120px);
+                        transform: translateX(-105px);
                     }
                     .transformation3 {
-                        transform: translateX(-125px);
+                        transform: translateX(-110px);
                     }
                 .icone {
                     margin-left: 50px;
-                    margin-right: 30px;
+                    margin-right: 10px;
                 }
                 }
             }
@@ -345,7 +369,6 @@
                     padding: 0 50px 0 20px;
                     .coeur {
                         font-size: 25px;
-                        margin-top: -100px;
                     }
                     
                 }
